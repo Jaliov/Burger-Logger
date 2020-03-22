@@ -1,63 +1,63 @@
 <h1>Eat-Da-Burger!</h1>
 <div class="container">
-<div class="row">
-
-   <div class="card col-md-4 offset-md-1 col-sm-6 col-xs-12" style="width: 30rem;">
-<ul>
-  {{#each burger}}
-    {{#unless devoured}}
-    {{!-- changed devoured to true: --}}
-      {{> burgers/burger-block devoured=true}} 
-    {{/unless}}
-  {{/each}}
- 
-</ul>
- </div>
-
- <div class="card col-md-3 offset-md-4 col-sm-6 col-xs-12" style="width: 30rem;">
-
-<ul>
-  {{#each burger}} 
-  {{#if devoured}}
-       {{> burgers/burger-block devoured=false}}
-    {{/if}}
-  {{/each}}
-
-
-</ul>
-
-</div>
-
-
   <div class="row">
-    <div class="col offset-md-7">
-<h2 id = "addIt">Add Burger</h2>
-<form class="create-form">
 
-  <div class="form-group"> <h3>Burger Type:</h3></label>
-    <input type="text" id="zBurger" name="burger_name">
-   
+    <div class="card col-md-4 offset-md-1 col-sm-6 col-xs-12" style="width: 30rem;">
+      <ul>
+        {{#each burger}}
+        {{#unless devoured}}
+        {{!-- changed devoured to true: --}}
+        {{> burgers/burger-block devoured=true}}
+        {{/unless}}
+        {{/each}}
+
+      </ul>
+    </div>
+
+    <div class="card col-md-3 offset-md-4 col-sm-6 col-xs-12" style="width: 30rem;">
+
+      <ul>
+        {{#each burger}}
+        {{#if devoured}}
+        {{> burgers/burger-block devoured=false}}
+        {{/if}}
+        {{/each}}
+
+      </ul>
+
+    </div>
+
+    <div class="row">
+      <div class="col offset-md-7">
+        <h2 id="addIt">Add Burger</h2>
+        <form class="create-form">
+
+          <div class="form-group">
+            <h3>Burger Type:</h3></label>
+            <input type="text" id="zBurger" name="burger_name">
+
+          </div>
+        </form>
+
+        <button type="submit" class="btn btn-danger btn-lg" id="submtB">
+          <h3>Add Burger</h3>
+        </button>
+      </div>
+      <div class="col display-burger">
+
+        <script>
+          function changeLoc() {
+            var item = document.querySelector("li")
+            item.style = "margin-left: 90%";
+          }
+          var moveIt = document.querySelector(".display-burger")
+          moveIt.addEventListener("click", changeLoc)
+        </script>
+
+      </div>
+
+    </div>
+
+
+    </form>
   </div>
-  </form>
-
- <button type="submit" class ="btn btn-danger btn-lg" id = "submtB"><h3>Add Burger</h3></button>
- </div>
- <div class="col display-burger">
-
-<script>
-function changeLoc() {
-  var item = document.querySelector("li")
-  item.style = "margin-left: 90%";
-}
-var moveIt = document.querySelector(".display-burger")
-moveIt.addEventListener("click", changeLoc)
-
-</script>
-
-</div>
-
- </div>
-
-   
-</form>
-</div>
