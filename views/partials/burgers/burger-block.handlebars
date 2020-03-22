@@ -1,0 +1,16 @@
+<li>
+	{{burger_name}}
+     {{!-- need to add handlebars if devoured show delete button, else show devour me button. --}}
+	 {{#if devoured}}
+	 
+
+	<button class="display-burger" data-id="{{id}}" data-devoured="{{devoured}}">Devour burger
+	
+	</button>
+	{{else}}
+	<button class="delete-burg" data-id="{{this.id}}">DELETE</button>
+     {{/if}}
+	
+      
+	
+</li>

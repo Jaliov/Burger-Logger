@@ -1,7 +1,29 @@
-li {
+h1 {
+  text-align: center;
+  font-family: 'Sonsie One', cursive;
+  font-size: 200%;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Sonsie One', cursive;
+}
+li, h3{
+  font-size: 160%;
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: #b40f0f;
+  font-weight: bold; 
+  color: white;
+}
+
+.card {
+  background:  #b40f0f;
+}
+
+ul {
+  background: #b40f0f;
+  border: 5px solid white;
 }
 
 .label {
@@ -16,4 +38,34 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+.delete-burg {
+  margin-left: 80%;
+}
+
+.create-form {
+  background: rgb(243, 243, 55); 
+}
+
+body {
+  background-image: url('../hamburger_edit.jpg');
+}
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /*background-image: url('../hamburger_edit.jpg');*/
+}
+
+#zBurger {
+  font-size: 160%;
+  width: 500px;
+}
+#submitB {
+  font-weight: bold; 
+  font-size: 120%;
+  background: none;
+  padding: 5px;
+}
+#addIt {
+  background: rgb(243, 243, 55); 
 }
