@@ -1,7 +1,6 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
 
-
 var connection = mysql.createConnection(process.env.NODE_ENV === "production" ? process.env.JAWSDB_URL : {
   "user": "root",
   "password": "root",
