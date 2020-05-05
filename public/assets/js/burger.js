@@ -26,11 +26,11 @@ $(function () {
     event.preventDefault();
     var newBurger = {
       burger_name: $("#zBurger").val().trim(),
-
     };
-
+    
+   
     // Send the POST request.
-    if (newBurger) {
+    if (newBurger.burger_name) {
       $.ajax("/api/burger", {
         type: "POST",
         data: newBurger
@@ -43,6 +43,7 @@ $(function () {
       );
     }
   });
+
   $(".delete-burg").on("click", function (event) {
     var id = $(this).data("id");
 
