@@ -46,6 +46,7 @@ ul {
   margin-bottom: 5px;
 }
 
+
 .delete-burg {
   margin-left: 75%;
   border-radius: 25px;
@@ -62,19 +63,21 @@ body {
 
 #zBurger {
   font-size: 160%;
-  width: 500px;
+  width: 40rem;
+  text-align: center;
+  border-radius: 25px;
 }
 
 #submitB {
   font-weight: bold;
   font-size: 120%;
   background: none;
-  padding: 5px;
+  padding: 20px;
 
 }
 
 #addIt {
-  background: rgb(243, 243, 55);
+  color: rgb(243, 243, 55);
   margin-left: 20px;
   margin-top: 5px;
 }
@@ -95,4 +98,5 @@ body {
 .form-inline {
   background-color: #b40f0f;
   border-radius: 25px;
+  width: 60rem;
 }
