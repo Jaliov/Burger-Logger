@@ -1,4 +1,4 @@
-<h1 style="margin-top:20px;">Eat-Da-Burger!</h1>
+<h1 style="margin-top:20px;margin-bottom:30px;">Eat-Da-Burger!</h1>
 <div class="container">
   <div class="row">
 
@@ -27,22 +27,26 @@
 
     </div>
 
-    <div class="row" style="width: 60rem;" id="addBurgerField">
-      <div class=" card offset-md-5 col-mx-auto" style="margin-top: 20px;">
-        <h2 id="addIt">Add Burger</h2>
-        <form class="create-form">
+    {{!-- <div class="row" style="width: 60rem;" id="addBurgerField"> --}}
 
-          <div class="form-group">
-            <h3>Burger Type:</h3></label>
-            <input type="text" id="zBurger" name="burger_name" style="width: 24rem;">
 
-          </div>
-        </form>
 
-        <button type="submit" class="btn btn-danger btn-lg" id="submtB">
-          <h3>Add Burger</h3>
-        </button>
-      </div>
+    <div class=" card" style="margin-top: 40px;border-radius: 25px;">
+      <form class="form-inline">
+        <div class="form-group mb-3">
+
+          <h2 id="addIt">Add Burger</h2>
+          <form class="create-form">
+
+            <div class="form-group">
+              <input type="text" id="zBurger" name="burger_name" style="width: 40rem" placeholder="Burger Type">
+
+            </div>
+            <button type="submit" class="btn btn-danger btn-lg" id="submtB" style="border-radius: 25px;">
+              <h3>Add Burger</h3>
+            </button>
+          </form>
+        </div>
     </div>
     <div class="col display-burger">
 

@@ -7,6 +7,8 @@ h1 {
 h2 {
   text-align: center;
   font-family: 'Sonsie One', cursive;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 li,
@@ -21,6 +23,7 @@ h3 {
 
 .card {
   background: #b40f0f;
+
 }
 
 ul {
@@ -54,15 +57,7 @@ ul {
 }
 
 body {
-  background-image: url('../hamburger_edit.jpg');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.container {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  /*background-image: url('../hamburger_edit.jpg');*/
+  background-image: url('../hamburger_edit_doubled.jpg');
 }
 
 #zBurger {
@@ -75,10 +70,13 @@ body {
   font-size: 120%;
   background: none;
   padding: 5px;
+
 }
 
 #addIt {
   background: rgb(243, 243, 55);
+  margin-left: 20px;
+  margin-top: 5px;
 }
 
 #addBurger,
@@ -91,5 +89,10 @@ body {
 }
 
 .display-burger {
+  border-radius: 25px;
+}
+
+.form-inline {
+  background-color: #b40f0f;
   border-radius: 25px;
 }
