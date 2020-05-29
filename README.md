@@ -1,6 +1,6 @@
 # Burger-Logger
 
-![](Burger-LoggerScrnShot.jpg)
+![](Burger-LoggerScrnShot2.jpg)
 
 - Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
 - Whenever a user submits a burger's name, the burger is displayed on the left side of the page -- waiting to be devoured.
@@ -13,6 +13,7 @@
 - Handlebars
 - Node.js
 - MySQL
+- Express
 - CSS
 - Photoshop
 
