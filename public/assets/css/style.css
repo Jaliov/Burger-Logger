@@ -26,6 +26,7 @@ h3 {
 ul {
   background: #b40f0f;
   border: 5px solid white;
+  border-radius: 25px;
 }
 
 .label {
@@ -44,6 +45,8 @@ ul {
 
 .delete-burg {
   margin-left: 75%;
+  border-radius: 25px;
+  background-color: hsl(180, 100%, 50%, 50%);
 }
 
 .create-form {
@@ -53,6 +56,7 @@ ul {
 body {
   background-image: url('../hamburger_edit.jpg');
   background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -75,4 +79,17 @@ body {
 
 #addIt {
   background: rgb(243, 243, 55);
+}
+
+#addBurger,
+#deleteBurger {
+  background-color: rgb(243, 243, 55, 0.35);
+}
+
+#addBurgerField {
+  border-radius: 25px;
+}
+
+.display-burger {
+  border-radius: 25px;
 }

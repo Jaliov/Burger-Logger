@@ -1,8 +1,8 @@
+<h1 style="margin-top:20px;">Eat-Da-Burger!</h1>
 <div class="container">
-  <h1>Eat-Da-Burger!</h1>
   <div class="row">
 
-    <div class="card col-md-3 offset-md-1 col-sm-6 col-xs-12" style="width: 30rem;">
+    <div class="card col-md-4 col-sm-6 col-xs-12" style="width: 30rem;" id="addBurger">
       <ul>
         {{#each burger}}
         {{#unless devoured}}
@@ -14,7 +14,7 @@
       </ul>
     </div>
 
-    <div class="card col-md-3 offset-md-4 col-sm-6 col-xs-12" style="width: 30rem;">
+    <div class="card col-md-3 offset-md-4 col-sm-6 col-xs-12" style="width: 30rem;" id="deleteBurger">
 
       <ul>
         {{#each burger}}
@@ -27,8 +27,8 @@
 
     </div>
 
-    <div class="row" style="width: 60rem;">
-      <div class=" card offset-md-5" style="margin-top: 20px;">
+    <div class="row" style="width: 60rem;" id="addBurgerField">
+      <div class=" card offset-md-5 col-mx-auto" style="margin-top: 20px;">
         <h2 id="addIt">Add Burger</h2>
         <form class="create-form">
 
@@ -43,21 +43,22 @@
           <h3>Add Burger</h3>
         </button>
       </div>
-      <div class="col display-burger">
+    </div>
+    <div class="col display-burger">
 
-        <script>
-          function changeLoc() {
-            var item = document.querySelector("li")
-            item.style = "margin-left: 90%";
-          }
-          var moveIt = document.querySelector(".display-burger")
-          moveIt.addEventListener("click", changeLoc)
-        </script>
-
-      </div>
+      <script>
+        function changeLoc() {
+          var item = document.querySelector("li")
+          item.style = "margin-left: 90%";
+        }
+        var moveIt = document.querySelector(".display-burger")
+        moveIt.addEventListener("click", changeLoc)
+      </script>
 
     </div>
 
-
-    </form>
   </div>
+
+
+  </form>
+</div>
