@@ -76,10 +76,12 @@ body {
 
 }
 
+
 #addIt {
   color: rgb(243, 243, 55);
   margin-left: 20px;
   margin-top: 5px;
+  border-radius: 25px;
 }
 
 #addBurger,
